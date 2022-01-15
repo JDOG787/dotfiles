@@ -6,7 +6,7 @@
   home.username = "jdog787";
   home.homeDirectory = "/home/jdog787";
   
-  home.packages = [pkgs.alacritty];
+  home.packages = [pkgs.alacritty pkgs.discord];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
