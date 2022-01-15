@@ -7,6 +7,8 @@
   home.homeDirectory = "/home/jdog787";
   
   home.packages = [pkgs.alacritty pkgs.discord];
+  
+  nixpkgs.config.allowUnfree = true;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
