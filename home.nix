@@ -1,20 +1,15 @@
 { config, pkgs, ... }:
 
 {
+  imports = [ 
+    ./modules/i3.nix
+  ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "jdog787";
   home.homeDirectory = "/home/jdog787";
   
   home.packages = [pkgs.alacritty pkgs.discord];
-  xsession.windowManager.i3 = {
-    config = {
-      gaps = {
-        inner = 25;
-        outer = 25;
-      };
-    };
-  };
   nixpkgs.config.allowUnfree = true;
 
   # This value determines the Home Manager release that your

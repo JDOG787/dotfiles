@@ -1,5 +1,13 @@
-{ config, lib, pkgs, ... }
+{ config, lib, pkgs, ... }:
 
 {
-  # xsession.windowManager.i3.package = pkgs.i3-gaps;
+  xsession.windowManager.i3 = {
+    enable = true;
+    config = {
+      gaps = {
+        inner = 15;
+        outer = 25;
+      };
+    };
+  };
 }
