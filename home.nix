@@ -8,11 +8,10 @@
   
   home.packages = [pkgs.alacritty pkgs.discord];
   xsession.windowManager.i3 = {
-    package = pkgs.i3-gaps;
     config = {
       gaps = {
-        inner = 15;
-        outer = 5;
+        inner = 25;
+        outer = 25;
       };
     };
   };
