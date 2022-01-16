@@ -7,7 +7,15 @@
   home.homeDirectory = "/home/jdog787";
   
   home.packages = [pkgs.alacritty pkgs.discord];
-  
+  xsession.windowManager.i3 = {
+    package = pkgs.i3-gaps;
+    config = {
+      gaps = {
+        inner = 15;
+        outer = 5;
+      };
+    };
+  };
   nixpkgs.config.allowUnfree = true;
 
   # This value determines the Home Manager release that your

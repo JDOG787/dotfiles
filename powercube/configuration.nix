@@ -13,6 +13,8 @@
   environment.pathsToLink = ["/libexec"];
   services.xserver = {
     enable = true;
+    videoDrivers = ["amdgpu"];
+
     desktopManager = {
       xterm.enable = false;
     };
@@ -23,7 +25,9 @@
 
     windowManager.i3 = {
       enable = true;
-      
+     
+      package = pkgs.i3-gaps;
+
       extraPackages = with pkgs; [
         dmenu
         i3status
@@ -31,10 +35,6 @@
         i3blocks
       ];
     };
-  };
-  services.xserver.windowManager = {
-    i3-gaps.enable = true;
-    default = "i3-gaps";
   };
   nixpkgs.config.allowUnfree = true;
   # Use the systemd-boot EFI boot loader.
