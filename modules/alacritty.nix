@@ -8,7 +8,7 @@
       background_opacity = 0.4;
       
       fonts = {
-        normal = "JetBrain Mono";
+        normal = "JetBrainsMono";
       };
      
     };

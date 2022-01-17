@@ -10,7 +10,12 @@
   home.username = "jdog787";
   home.homeDirectory = "/home/jdog787";
   
-  home.packages = [pkgs.alacritty pkgs.discord pkgs.picom];
+  home.packages = [
+   pkgs.alacritty
+   pkgs.discord
+   pkgs.picom
+   pkgs.neovim
+  ];
   nixpkgs.config.allowUnfree = true;
   services.picom.enable = true;
 
