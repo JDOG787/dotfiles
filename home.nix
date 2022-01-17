@@ -3,14 +3,16 @@
 {
   imports = [ 
     ./modules/i3.nix
+    ./modules/alacritty.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home.username = "jdog787";
   home.homeDirectory = "/home/jdog787";
   
-  home.packages = [pkgs.alacritty pkgs.discord];
+  home.packages = [pkgs.alacritty pkgs.discord pkgs.picom];
   nixpkgs.config.allowUnfree = true;
+  services.picom.enable = true;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
