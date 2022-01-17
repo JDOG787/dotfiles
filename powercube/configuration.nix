@@ -81,6 +81,10 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  sound.mediaKeys = {
+    enable = true;
+    volumeStep = "5%";
+  };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jdog787 = {
