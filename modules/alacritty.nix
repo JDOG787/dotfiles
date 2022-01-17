@@ -6,7 +6,11 @@
     
     settings = {
       background_opacity = 0.4;
-
+      
+      fonts = {
+        normal = "JetBrain Mono";
+      };
+     
     };
   };
 }
