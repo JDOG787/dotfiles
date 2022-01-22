@@ -15,6 +15,7 @@ in {
         "XF86AudioMute" = "exec --no-startup-id pactl set-sink-mute 0 toggle";
 	"${mod}+t" = "layout tabbed";
 	"${mod}+w" = "exec ${pkgs.firefox}/bin/firefox";
+	"Print" = "exec ${pkgs.flameshot}/bin/flameshot gui";
       };
               
 

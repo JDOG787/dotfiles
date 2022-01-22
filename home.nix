@@ -16,9 +16,14 @@
    pkgs.picom
    pkgs.neovim
    pkgs.noisetorch
+   pkgs.flameshot
   ];
   nixpkgs.config.allowUnfree = true;
   services.picom.enable = true;
+  services.flameshot = {
+    enable = true; 
+
+  };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
