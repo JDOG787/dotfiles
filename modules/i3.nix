@@ -9,9 +9,15 @@ in {
     config = {
       modifier = mod;
         
+      keybindings = lib.mkOptionDefault {
+        "XF86AudioRaiseVolume" = "exec --no-startup-id pactl set-sink-volume 0 +5%";
+        "XF86AudioLowerVolume" = "exec --no-startup-id pactl set-sink-volume 0 -5%";
+        "XF86AudioMute" = "exec --no-startup-id pactl set-sink-mute 0 toggle";
+      };
+              
 
       gaps = {
-        inner = 15;
+        inner = 18;
         outer = 25;
       };
 
