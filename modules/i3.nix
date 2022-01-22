@@ -13,6 +13,8 @@ in {
         "XF86AudioRaiseVolume" = "exec --no-startup-id pactl set-sink-volume 0 +5%";
         "XF86AudioLowerVolume" = "exec --no-startup-id pactl set-sink-volume 0 -5%";
         "XF86AudioMute" = "exec --no-startup-id pactl set-sink-mute 0 toggle";
+	"${mod}+t" = "layout tabbed";
+	"${mod}+w" = "exec ${pkgs.firefox}/bin/firefox";
       };
               
 

@@ -15,6 +15,7 @@
    pkgs.discord
    pkgs.picom
    pkgs.neovim
+   pkgs.noisetorch
   ];
   nixpkgs.config.allowUnfree = true;
   services.picom.enable = true;
