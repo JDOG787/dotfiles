@@ -81,6 +81,7 @@
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+  hardware.bluetooth.enable = true;
   sound.mediaKeys = {
     enable = true;
     volumeStep = "5%";
@@ -128,9 +129,6 @@
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
  
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "discord"
-  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
