@@ -26,7 +26,7 @@
     enable = true; 
 
   };
-  xdg.configFile.".config/nvim/init.vim" = ./config/nvim/init.vim;
+  xdg.configFile."nvim/init.vim".source = ./config/nvim/init.vim;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
