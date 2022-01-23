@@ -17,6 +17,7 @@
    pkgs.neovim
    pkgs.noisetorch
    pkgs.flameshot
+   pkgs.neovide
   ];
   nixpkgs.config.allowUnfree = true;
   services.picom.enable = true;
