@@ -20,6 +20,7 @@ Plug 'https://github.com/preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'shaunsingh/nord.nvim'
 Plug 'andweeb/presence.nvim'
+Plug 'EdenEast/nightfox.nvim'
  
 call plug#end()
 
@@ -39,7 +40,7 @@ let g:nord_disable_background = v:false
 let g:nord_italic = v:false
 
 " Load the colorscheme
-colorscheme nord
+colorscheme nordfox
 syntax enable
 
 let g:neovide_transparency=0.8
